@@ -10,8 +10,8 @@ logger.addHandler(stream_handler)
 formatter = logging.Formatter('[%(asctime)s]: %(message)s')
 stream_handler.setFormatter(formatter)
 
-def print_ascii_title():
-    pass
+# I was going to add print statements for title into this script but I think it would be better to write them
+# in a separate script and import them. print them here.
 
 # BankProduct parent class directs traffic to the rest of the classes.
 class BankProduct:
