@@ -3,6 +3,7 @@ import logging
 import sys
 import json     # json and namedtuple are for calculating the appropriate tiered dividends
 from collections import namedtuple
+from print_scripts import print_title, print_about, print_exit
 
 logger = logging.getLogger(__name__)
 stream_handler = logging.StreamHandler(sys.stdout)
@@ -10,10 +11,14 @@ logger.addHandler(stream_handler)
 formatter = logging.Formatter('[%(asctime)s]: %(message)s')
 stream_handler.setFormatter(formatter)
 
-# I was going to add print statements for title into this script but I think it would be better to write them
-# in a separate script and import them. print them here.
+title = print_title()
+about = print_about()
+exit_message = print_exit()
 
-# BankProduct parent class directs traffic to the rest of the classes.
+print(title)
+
+print(about)
+
 class BankProduct:
 
     def __init__(self):
@@ -155,5 +160,5 @@ while True:
 
     choice = input("Do you want to perform another calculation? (yes/no): ").strip().lower()
     if choice != 'yes':
-        print("\nExiting the program.\n")
+        print(exit_message)
         break
