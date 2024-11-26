@@ -12,4 +12,8 @@ to be imported into the main file wherein I just had to create print objects and
 
 11-25-24
 
-At this point I think I've done as much as I can with this little program. It probably went a bit faster than the course designers intended. But being that I had a week head start and decided it fit the criteria of the assignment, I decided to just build on what I already had. 
+At this point I think I've done as much as I can with this little program. It probably went a bit faster than the course designers intended. But being that I had a week head start and decided it fit the criteria of the assignment, I decided to just build on what I already had.
+
+I am renaming this repo so that instead of focusing on one portfolio project, I can use it to store them all. Renaming to "Codecademy Portfolio Projects". 
+
+As such, I am restructuring the folder system on the tree so that each one is labeled for the appropriate project.
