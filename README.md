@@ -1,4 +1,7 @@
-# New Project
+# Codecademy Portfolio Projects
+
+Project 1 - Python Terminal Game
+
 11-24-24
 
 This is a savings and loan calculator that I started on my own but am now incorporating into a portfolio 
@@ -13,6 +16,8 @@ to be imported into the main file wherein I just had to create print objects and
 11-25-24
 
 At this point I think I've done as much as I can with this little program. It probably went a bit faster than the course designers intended. But being that I had a week head start and decided it fit the criteria of the assignment, I decided to just build on what I already had.
+
+11-25-24 Repo Update
 
 I am renaming this repo so that instead of focusing on one portfolio project, I can use it to store them all. Renaming to "Codecademy Portfolio Projects". 
 
