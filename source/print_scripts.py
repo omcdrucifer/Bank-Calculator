@@ -1,9 +1,8 @@
-# This will be the file where I write the print scripts for the application title
-# they will be imported into the main script. I do not want that script getting too cluttered
+# These are the print scripts to be imported into the main script.
 
 def print_title():
     return """
-=====================================================================
+======================================================================
 
    # # #    #    # #  # # #    ##       ##     ###     #    ##   #  
   #       #   #  # #  #       #  #      ##    #   #  #   #  ###  #
@@ -11,13 +10,13 @@ def print_title():
        #  #   #  # #  #       #  ##     ##    #   #  #   #  ## ###
   # # #   #   #   #   # # #    # #      #####  ###   #   #  ##  ##
 
-=====================================================================
+======================================================================
 """
 
 def print_about():
     return """
 ======================================================================
-WRITTEN BY ANDREW RAWSON, 2024.
+SAVING AND LOAN CALCULATOR WRITTEN BY ANDREW RAWSON, 2024.
 ----------------------------------------------------------------------
 This is a calculator program that can do many financial calculations.
 It can find interest and monthly loan payments and dividends for 
@@ -25,6 +24,7 @@ certificates & money market accounts.
 
 It has a table reference for dividends where the return is based on
 account balances. You could also use the certificate path to calculate 
+
 returns on a standard savings account since you enter the value for 
 the interest rate.
 
@@ -40,6 +40,11 @@ Start by choosing either a loan, or a savings product.
 def print_exit():
     return """ 
 ======================================================================
-Closing program. See you next time!
+Closing program. See you next time! Thanks again!
 ======================================================================
     """
+
+def print_line_break():
+    return """
+----------------------------------------------------------------------  
+   """

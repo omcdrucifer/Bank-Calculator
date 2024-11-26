@@ -3,7 +3,7 @@ import logging
 import sys
 import json     # json and namedtuple are for calculating the appropriate tiered dividends
 from collections import namedtuple
-from print_scripts import print_title, print_about, print_exit
+from print_scripts import print_title, print_about, print_exit, print_line_break
 
 logger = logging.getLogger(__name__)
 stream_handler = logging.StreamHandler(sys.stdout)
@@ -14,9 +14,9 @@ stream_handler.setFormatter(formatter)
 title = print_title()
 about = print_about()
 exit_message = print_exit()
+line_break = print_line_break()
 
 print(title)
-
 print(about)
 
 class BankProduct:
@@ -107,6 +107,7 @@ class MoneyMarket(DepositProduct):
         self.balance = self.get_input("Enter deposit balance in whole dollars: ", int)
         self.tiered_interest = self.get_tiered_value()  # Money Market dividends are variable and based on balance tiers
         self.deposit_term_months = self.get_input("Enter deposit term to calculate in months: ", int)
+# I opted to write the title and large dialog prints in a separate file and import
 
     def get_tiered_value(self):
         try:
@@ -157,7 +158,7 @@ while True:
             dividends = money_market.calculate_dividends_tiered()
             print(money_market)
             print(dividends)
-
+    print(line_break)
     choice = input("Do you want to perform another calculation? (yes/no): ").strip().lower()
     if choice != 'yes':
         print(exit_message)
