@@ -1,4 +1,4 @@
-# Codecademy Portfolio Projects
+# Bank Calculator
 
 Project 1 - Python Terminal Game
 
@@ -22,3 +22,7 @@ At this point I think I've done as much as I can with this little program. It pr
 I am renaming this repo so that instead of focusing on one portfolio project, I can use it to store them all. Renaming to "Codecademy Portfolio Projects". 
 
 As such, I am restructuring the folder system on the tree so that each one is labeled for the appropriate project.
+
+12-3-24
+
+I am renaming the repo again. I decided that it was going to be necessary to learn how to ship actual packages. That being said, I figured trying to store multiple, possibly unreleated, packages in a single repo. So I will be re-dedicating this one to the bank calculator project, and starting new repos for subsequent projects.
