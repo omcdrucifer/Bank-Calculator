@@ -1,3 +1,5 @@
+
+import logging
 import sys
 import json
 from collections import namedtuple
