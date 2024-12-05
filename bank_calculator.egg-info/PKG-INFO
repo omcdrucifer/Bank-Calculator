@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: bank-calculator
-Version: 0.1.1
+Version: 0.1.2
 Summary: A simple Python package that can calculate loan payments and dividends
 Author: Andrew Rawson
 Author-email: Andrew Rawson <arawson@proton.me>
@@ -41,3 +41,5 @@ As such, I am restructuring the folder system on the tree so that each one is la
 12-3-24
 
 I am renaming the repo again. I decided that it was going to be necessary to learn how to ship actual packages. That being said, I figured trying to store multiple, possibly unreleated, packages in a single repo. So I will be re-dedicating this one to the bank calculator project, and starting new repos for subsequent projects.
+
+Somehow 'import logging' got removed. Re-added
