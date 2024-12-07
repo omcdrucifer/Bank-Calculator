@@ -5,10 +5,6 @@ import json
 from collections import namedtuple
 import logging
 
-import customtkinter as ctk
-import json
-from collections import namedtuple
-
 def get_resource_path(relative_path):
     """ Get the absolute path to the resource, works for dev and for PyInstaller """
     try:
