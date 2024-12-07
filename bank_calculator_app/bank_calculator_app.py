@@ -1,11 +1,26 @@
 import customtkinter as ctk
+import os
 import sys
 import json
 from collections import namedtuple
+import logging
 
 import customtkinter as ctk
 import json
 from collections import namedtuple
+
+def get_resource_path(relative_path):
+    """ Get the absolute path to the resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except AttributeError:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
+json_path = get_resource_path('dividend_rates.json')
+print(f"Looking for JSON file at: {json_path}")
 
 class BankProductGUI:
     def __init__(self, root):
@@ -87,9 +102,8 @@ class BankProductGUI:
         if not inputs:
             return
         balance, deposit_term_months, _ = inputs
-
         try:
-            with open('dividend_rates.json') as json_file:
+            with open(json_path, 'r') as json_file:
                 data = json.load(json_file)
                 Tier = namedtuple("Tier", ["balance_range", "rate"])
                 tiers = [Tier(x["balance_range"], x["rate"]) for x in data["tiers"]]

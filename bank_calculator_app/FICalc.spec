@@ -6,7 +6,7 @@ a = Analysis(
     ['bank_calculator_app.py'],
     pathex=[r'/home/andrewr/dev stuff/bank_calculator/bank_calculator_app/'],
     binaries=[],
-    datas=[(r'/home/andrewr/dev stuff/bank_calculator/bank_calculator_app/dividend_rates.json', 'dividend_rates.json')],
+    datas=[(r'/home/andrewr/dev stuff/bank_calculator/bank_calculator_app/dividend_rates.json', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
