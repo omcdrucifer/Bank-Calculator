@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 setup(
 name='bank_calculator',
-version='0.1.1',
+version='0.1.2',
 author='Andrew Rawson',
 email='arawson@proton.me',
 description='A simple Python package that can calculate loan payments and dividends',
